@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+}
+
+.characters {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vh;
+    
+}
+.characterImage {
+
+    border-radius: 2px;
+    border: 20px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px 5px#888888;
+
+}
+
+
+.characters h2{
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 992px){
+    .characters {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2vh;
+    }
+
+}
+@media only screen and (max-width: 1200px) and (min-width: 992px){
+    .characters {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vh;
+    }
+}
